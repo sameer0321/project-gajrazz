@@ -80,6 +80,33 @@
     display: none !important;
 }
 
+.footer-bg-img {
+    background-image: url("/assets/images/mall-interior-image-3.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.social-icon {
+    font-size: 24px;
+    color: white;
+    /* Change this to your desired color */
+    text-decoration: none;
+    transition: all 300ms linear;
+}
+
+.social-icon:hover {
+    color: #f8e263;
+    /* Change this to your desired hover color */
+}
+
+.footer_links {
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+}
+
 @media (max-width:1024px) {
     .main-heading {
         font-size: 65px !important;

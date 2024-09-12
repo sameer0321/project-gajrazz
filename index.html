@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -20,9 +23,9 @@
                     <img style="width: 120px;" src="assets/images/logo-2.png" alt="logo">
                     <ul class="d-flex align-items-center gap-4 m-0 p-0 mobileview">
                         <li><a class="navlinks text-decoration-none" href="#">HOME</a></li>
-                        <li><a class="navlinks text-decoration-none" href="#">ABOUT US</a></li>
-                        <li><a class="navlinks text-decoration-none" href="#">MALL HIGHLIGHTS</a></li>
-                        <li><a class="navlinks text-decoration-none" href="#">SERVICES</a></li>
+                        <li><a class="navlinks text-decoration-none" href="#aboutUs">ABOUT US</a></li>
+                        <li><a class="navlinks text-decoration-none" href="#highlights">MALL HIGHLIGHTS</a></li>
+                        <li><a class="navlinks text-decoration-none" href="#services">SERVICES</a></li>
                         <!-- <li><a class="navlinks text-decoration-none" href="#">CONTACT US</a></li> -->
                     </ul>
                     <label class="menu d-md-none">
@@ -42,7 +45,7 @@
     </header>
     <!-- ------------------- HEADER ENDED ---------------------------- -->
     <!-- ------------------- ABOUT-US STARTED ---------------------------- -->
-    <section class="about-us-bg-img d-flex">
+    <section class="about-us-bg-img d-flex" id="aboutUs">
         <div class="container pt-4 pt-md-5 d-flex flex-column">
             <h2 class="text-white text-center font-Reddit">ABOUT US</h2>
             <div class="row align-items-center flex-grow-1">
@@ -62,21 +65,21 @@
     </section>
     <!-- ------------------- ABOUT-US ENDED ---------------------------- -->
     <!-- ------------------- MALL-HIGHLIGHTS STARTED ---------------------------- -->
-    <section class="bg-black">
+    <section class="bg-black" id="highlights">
         <div class="container py-3 py-md-5">
             <h2 class="text-white text-center font-Reddit">MALL HIGHLIGHTS</h2>
             <div class="row pt-4 justify-content-center">
                 <div class="col-md-4 col-sm-6 text-center">
                     <img class="w-100" src="assets/images/multiplex.webp" alt="multiplex">
-                    <h3 class="text-white font-Reddit">MULTIPLEX</h3>
+                    <h3 class="text-white font-Reddit pt-2">MULTIPLEX</h3>
                 </div>
-                <div class="col-md-4 col-sm-6 text-center">
+                <div class="col-md-4 col-sm-6 text-center pt-4 pt-sm-0">
                     <img class="w-100" src="assets/images/fun-zone.avif" alt="fun-zone">
-                    <h3 class="text-white font-Reddit">FUN ZONE</h3>
+                    <h3 class="text-white font-Reddit pt-2">FUN ZONE</h3>
                 </div>
-                <div class="col-md-4 col-sm-6 text-center">
+                <div class="col-md-4 col-sm-6 text-center pt-4 pt-md-0">
                     <img class="w-100" src="assets/images/food-court.png" alt="food-court">
-                    <h3 class="text-white font-Reddit">FOOD COURT</h3>
+                    <h3 class="text-white font-Reddit pt-2">FOOD COURT</h3>
                 </div>
             </div>
         </div>
@@ -108,46 +111,103 @@
     </section>
     <!-- ------------------- OUR VISSION STARTED ---------------------------- -->
     <!-- ------------------- SERVICES STARTED ---------------------------- -->
-    <section class="bg-black py-5">
+    <section class="bg-black py-5" id="services">
         <div class="container">
             <h2 class="text-white text-center font-Reddit">SERVICES</h2>
             <div class="row pt-4">
                 <div class="col-md-4 col-sm-6 text-center">
                     <img class="w-100" style="border-top-left-radius: 50px; border-bottom-right-radius: 50px;"
                         src="assets/images/beverages.jpg" alt="beverages">
-                    <h3 class="text-white font-Reddit">24/7 BEVERAGES</h3>
+                    <h3 class="text-white font-Reddit pt-2">24/7 BEVERAGES</h3>
                 </div>
-                <div class="col-md-4 col-sm-6 text-center">
+                <div class="col-md-4 col-sm-6 text-center pt-4 pt-sm-0">
                     <img class="w-100" style="border-top-left-radius: 50px; border-bottom-right-radius: 50px;"
                         src="assets/images/organic-store.jpg" alt="organic-store">
-                    <h3 class="text-white font-Reddit">ORGANIC STORE</h3>
+                    <h3 class="text-white font-Reddit pt-2">ORGANIC STORE</h3>
                 </div>
-                <div class="col-md-4 col-sm-6 text-center">
+                <div class="col-md-4 col-sm-6 text-center pt-4 pt-md-0">
                     <img class="w-100" style="border-top-left-radius: 50px; border-bottom-right-radius: 50px;"
                         src="assets/images/room-stay.jpg" alt="room-stay">
-                    <h3 class="text-white font-Reddit">ROOM STAY</h3>
+                    <h3 class="text-white font-Reddit pt-2">ROOM STAY</h3>
                 </div>
-                <div class="col-md-4 col-sm-6 d-md-none text-center">
+                <div class="col-md-4 col-sm-6 d-md-none text-center pt-4 pt-md-0">
                     <img class="w-100" style="border-top-left-radius: 50px; border-bottom-right-radius: 50px;"
                         src="assets/images/shoping-img.jpg" alt="room-stay">
-                    <h3 class="text-white font-Reddit">SHOPPING</h3>
+                    <h3 class="text-white font-Reddit pt-2">SHOPPING</h3>
                 </div>
             </div>
             <div class="row pt-4 justify-content-center">
                 <div class="col-md-4 col-sm-6 d-none d-md-block text-center">
                     <img class="w-100" style="border-top-left-radius: 50px; border-bottom-right-radius: 50px;"
                         src="assets/images/shoping-img.jpg" alt="room-stay">
-                    <h3 class="text-white font-Reddit">SHOPPING</h3>
+                    <h3 class="text-white font-Reddit pt-2">SHOPPING</h3>
                 </div>
                 <div class="col-md-4 col-sm-6 text-center">
                     <img class="w-100" style="border-top-left-radius: 50px; border-bottom-right-radius: 50px;"
                         src="assets/images/space-rentt.png" alt="room-stay">
-                    <h3 class="text-white font-Reddit">SPACE FOR RENT</h3>
+                    <h3 class="text-white font-Reddit pt-2">SPACE FOR RENT</h3>
                 </div>
             </div>
         </div>
     </section>
     <!-- ------------------- SERVICES STARTED ---------------------------- -->
+    <!-- ------------------- FOOTER STARTED ---------------------------- -->
+    <footer class="footer-bg-img">
+        <div class="container py-5">
+            <div class="row align-items-center">
+                <div class="col-lg-5">
+                    <img style="width: 120px;" src="assets/images/logo-2.png" alt="logo">
+                    <p class="text-white" style="font-size: 18px; padding-top: 18px;">Whether you’re here for a shopping
+                        spree, a family outing, or a casual hangout, Gajraz International Mall has something for
+                        everyone. Come and experience the best of retail, dining, and entertainment under one roof.</p>
+                    <div style="display: flex; gap: 15px; padding-top: 10px;">
+                        <a href="https://www.instagram.com" target="_blank" class="social-icon">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.facebook.com" target="_blank" class="social-icon">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://www.whatsapp.com" target="_blank" class="social-icon">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="row pt-4 pt-lg-0">
+                        <div class="col-md-4 col-sm-6">
+                            <ul class="d-flex flex-column gap-3 p-0 m-0">
+                                <li style="color: white; font-size: 22px; font-weight: 600;">Navlinks</li>
+                                <li><a class="footer_links" href="#">HOME</a></li>
+                                <li><a class="footer_links" href="#">ABOUT US</a></li>
+                                <li><a class="footer_links" href="#">MALL HIGHLIGHTS</a></li>
+                                <li><a class="footer_links" href="#">SERVICES</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4 col-sm-6 pt-4 pt-sm-0">
+                            <ul class="d-flex flex-column gap-3 p-0 m-0">
+                                <li style="color: white; font-size: 22px; font-weight: 600;">MALL HIGHLIGHTS</li>
+                                <li><a class="footer_links" href="#">MULTIPLEX</a></li>
+                                <li><a class="footer_links" href="#">FUN ZONE</a></li>
+                                <li><a class="footer_links" href="#">FOOD COURT</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-4 pt-4 pt-md-0">
+                            <ul class="d-flex flex-column gap-3 p-0 m-0">
+                                <li style="color: white; font-size: 22px; font-weight: 600;">SERVICES</li>
+                                <li><a class="footer_links" href="#">24/7 BEVERAGES</a></li>
+                                <li><a class="footer_links" href="#">ORGANIC STORE</a></li>
+                                <li><a class="footer_links" href="#">ROOM STAY</a></li>
+                                <li><a class="footer_links" href="#">SHOPPING</a></li>
+                                <li><a class="footer_links" href="#">SPACE FOR RENT</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+    <!-- ------------------- FOOTER STARTED ---------------------------- -->
 
     <script src="assets/js/app.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
