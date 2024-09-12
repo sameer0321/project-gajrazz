@@ -22,4 +22,35 @@ navlinks.forEach(link => {
         arrow2.classList.toggle("rotate2");
         arrow3.classList.toggle("rotate3");
     })
-})
+});
+
+let topButton = document.getElementsByClassName("backToTop")[0];
+window.addEventListener("scroll", () => {
+    if (window.scrollY > 200) {
+        topButton.style.display = "block";
+    }
+    else {
+        topButton.style.display = "none";
+    }
+});
+
+function backToTop() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+};
+
+// Initially hide overflow
+document.body.style.overflow = 'hidden';
+
+// Hide preloader after 4 seconds and initialize AOS
+setTimeout(() => {
+    document.body.classList.add('loaded');
+    document.body.style.overflow = 'auto'; // Enable scrolling after 4 seconds
+
+    // Initialize AOS after the preloader is hidden
+    AOS.init({
+        once: true,
+        duration: 2500,
+        disable: 'mobile',
+    });
+}, 4000); // 4000 milliseconds = 4 seconds
